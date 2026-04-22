@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Automotivo - Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Gestão de Veículos</h1>
+    
+    <div class="form-group">
+        <input type="text" id="marca" placeholder="Marca (Ex: Fiat)">
+        <input type="text" id="modelo" placeholder="Modelo (Ex: Palio)">
+        <input type="number" id="ano" placeholder="Ano">
+        <input type="number" id="preco" placeholder="Preço (R$)">
+        <input type="text" id="status" placeholder="Status (Ex: Disponível)">
+        <button onclick="cadastrarVeiculo()">Cadastrar</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Preço</th>
+                <th>Status</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-corpo">
+            </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
